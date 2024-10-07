@@ -1,5 +1,5 @@
 # I-hate-Read-Mes
-A simple read me generator because I hate read mes.
+A simple read me generator because I hate read mes. If you too hate Read Mes use my read me generator.
 
 AS A developer
 I WANT a README generator
