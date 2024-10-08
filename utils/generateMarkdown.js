@@ -193,15 +193,15 @@ ${renderLicenseSection(response.license)}
 ## Contributing:
 <p> ${response.contributing}
 
-## Test: 
+## Tests: 
 <p> ${response.test}
 
 ## Questions:
 <p> Feel free to reach out with any questions using the link below
 <br>
 
-[GitHub](https://github.com/${response.questionsGitHub})
-<p> Or email at ${response.questionsEmail}`
+[GitHub](https://github.com/${response.qGitHub})
+<p> Or email at ${response.qEmail}`
 };
 
 module.exports = generateMarkdown;

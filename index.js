@@ -5,22 +5,22 @@ const { clear } = require('console');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
 function launch () {
-    console.log(colors.purple("  PLEASE MAKE FULL SCREEN!"));
-    console.log(colors.purple("  Loading in:"));
-    console.log(colors.purple(""));
+    console.log(colors.magenta("  PLEASE MAKE FULL SCREEN!"));
+    console.log(colors.magenta("  Loading in:"));
+    console.log(colors.magenta(""));
     let count = 6;
     const timer = setInterval(function() {
         count--;
-        console.log(colors.Orange.bgBlack.bold(`  ${count} \x1b[1A `));
+        console.log(colors.yellow.bgBlack.bold(`  ${count} \x1b[1A `));
         if (count === 0) {
             clearInterval(timer);
             clear();
         }
     }, 1000);    
         setTimeout(() => {
-        console.log(colors.purple(""));
-        console.log(colors.purple(" Do you hate Read Mes? Then use this"));
-        console.log(colors.purple(`
+        console.log(colors.magenta(""));
+        console.log(colors.magenta(" Do you hate Read Mes? Then use this"));
+        console.log(colors.magenta(`
         /==========================================================================================================================================/
         ||                                                                                                                                        ||
         ||  ██████╗ ███████╗ █████╗ ██████╗ ███╗   ███╗███████╗     ██████╗ ███████╗███╗   ██╗███████╗██████╗  █████╗ ████████╗ ██████╗ ██████╗   ||
@@ -31,7 +31,7 @@ function launch () {
         ||  ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝ ╚═╝     ╚═╝╚══════╝     ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝  ||
         ||                                                                                                                                        ||
         /==========================================================================================================================================/`));
-        console.log(colors.purple(""));
+        console.log(colors.magenta(""));
         }, 6800);
 }
 
@@ -132,10 +132,10 @@ function writeToFile(fileName, readmeResult) {
         let count = 6;
         const readmeTimer = setInterval(() => {
         count--;
-        console.log(colors.Orange.bgBlack.bold(`  ${count} \x1b[1A `));
+        console.log(colors.yellow.bgBlack.bold(`  ${count} \x1b[1A `));
             if (count === 0) {
                 clearInterval(readmeTimer);
-                (error) ? console.error(error) : console.log(colors.purple("README created!"));  
+                (error) ? console.error(error) : console.log(colors.magenta("README created!"));  
             }
         }, 1000);
     })
@@ -147,8 +147,8 @@ function init() {
         inquirer.prompt(questions)
         .then((response) => {
             const readmeResult = generateMarkdown(response);
-            console.log(colors.purple("CREATING README... READY IN:"));
-            console.log(colors.purple(""));
+            console.log(colors.magenta("CREATING README... READY IN:"));
+            console.log(colors.magenta(""));
             writeToFile('README.md', readmeResult)
         })
     }, 7500);
