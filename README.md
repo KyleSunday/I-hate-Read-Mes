@@ -5,7 +5,7 @@
 ![Static Badge](https://img.shields.io/badge/License-WTFPL-lightblue.svg)
 
 ## Description:
-<p> read mes suck
+<p> I personally don't like read mes i feel like they are a waste of time but here is a generator that will cause you to waste less of it on read mes.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -16,18 +16,13 @@
 - [Questions](#questions)
 
 ## Installation:
-<p> download from repo and from a terminal cd into I-hate-Read-Mes then use npm i and then node index.js
+<p> download from repo and from a terminal cd into Read-Me-Generator then use npm i and then node index.js
 
 ## Usage:
-<p> from a terminal cd into I-hate-Read-Mes then use npm i and then node index.js
+<p> from a terminal cd into Read-Me-Generator then use npm i and then node index.js
 
 ## License:
 
-<p> This repo is under Do What The F*ck You Want To Public License license.  Please see link below for more details. 
-<br> 
-
-[http://www.wtfpl.net/about/](http://www.wtfpl.net/about/)
-  
 
 ## Contributing:
 <p> 
